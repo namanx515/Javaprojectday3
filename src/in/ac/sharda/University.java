@@ -14,5 +14,8 @@ public class University {
 		departments.parallelStream()
 		.forEach(s ->System.out.println(s.getId()));
 	}
+	public void resultDeclared() {
+		System.out.println("result has arrived");
+	}
 
 }

@@ -1,6 +1,6 @@
 package in.ac.sharda;
 
-public class Student {
+public class Student implements IresultarrivedListner {
 
 	private final int rollnumber;
 	private final String name;
@@ -26,6 +26,7 @@ public class Student {
 
 	public String getName() {
 		return name;
+	
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -34,5 +35,11 @@ public class Student {
 				.getRollnumber()==rollnumber;
 	}
 		return false;
+	}
+
+	@Override
+	public void resultArrived() {
+		System.out.println("Result arribed chech now");
+		
 	}
 }
